@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Weather App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="weather.css">
+</head>
+
+<body>
+
+    <div class="App">
+
+        <h1 class="app-name">Weather App</h1>
+
+        <input id="city-search" class="city-search" type="text" placeholder="Enter City name..."></input>
+
+        <div id = "spinner" class='loader' display = "none"></div>
+
+        <p id = "errorMessage"class="error-message"></p>
+
+        <h1 id="city-name" class="city-name"></h1>
+
+        <div id="weatherTemperature" class="icon-temp">
+
+        <img id="temperatureIcon"></img>
+        
+        <sup id="temperature" class="deg"></sup>
+        
+        </div>
+        
+        <h3 id="description" class="type"></h3>
+        
+        <h4 id="windSpeed" class="des-wind"></h4>
+
+        <script src="weather.js" async defer></script>
+
+    </div>
+</body>
+
+</html>

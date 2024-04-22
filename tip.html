@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tip</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="tip.css">
+    </head>
+    <body>
+        <div class="App">
+        <form id="paymentForm">
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email-address" required />
+            </div>
+
+            <br>
+            <div class="form-group">
+              <label for="amount">Amount</label>
+              <input type="tel" id="amount" required />
+            </div>
+            <br>
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" />
+            </div>
+            <br>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" />
+            </div>
+            <br>
+            <div class="form-submit">
+              <button type="submit" onclick="payWithPaystack()">Tip Me</button>
+            </div>
+          </form>
+        </div>
+          <script src="tip.js"></script>
+          <script src="https://js.paystack.co/v1/inline.js"></script>
+    </body>
+</html>

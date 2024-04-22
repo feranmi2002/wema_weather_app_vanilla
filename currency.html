@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Currency Converter</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="currency.css">
+
+</head>
+
+<body>
+    <div class="App">
+        <h1 class="app-name">Currency Converter</h1>
+
+        <div id="loader" class="loader"></div>
+
+        <select name="currencySelectionFrom" id="currencySelectFrom" style="margin-bottom: 8px;" onchange="fromInput()">
+        </select>
+
+        <div id ="error" class="error">
+            <p>No Internet Connection</p>
+            <button id="errorButton" onclick="onClickErrorButton()">RETRY</button>
+        </div>
+
+        <input id="currencyFromInput" class="currency-Box" placeholder="Enter amount"
+            oninput="fromInput()"></input>
+        <br>
+        <img id="transactionImg" class="transaction-img" src="transaction-14830.svg"></img>
+        <br>
+
+        <input id="currencyToInput" class="currency-Box" placeholder="Enter amount" oninput="toInput()"></input>
+
+        <select name="currencySelectionTo" id="currencySelectTo" style="margin-top: 8px;" onchange="toInput()"></select>
+
+    </div>
+    <script src="currency.js" async defer></script>
+</body>
+
+</html>
